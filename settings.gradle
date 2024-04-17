@@ -3,4 +3,5 @@ include 'user-service'
 include 'common'
 include 'data'
 include 'admin-service'
+include 'security'
 

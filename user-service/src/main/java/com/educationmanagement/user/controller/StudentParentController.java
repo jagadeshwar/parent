@@ -16,6 +16,7 @@ public class StudentParentController {
     @PostMapping("/student-parent")
     public Mono<ResponseEntity<StudentParentResponse>> createStudentParent(@RequestBody StudentParentRequest studentParentRequest) {
 
+
         return Mono.just(ResponseEntity.ok(new StudentParentResponse()));
     }
 

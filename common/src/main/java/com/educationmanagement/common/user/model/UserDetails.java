@@ -1,4 +1,4 @@
-package com.educationmanagement.data.user.entity;
+package com.educationmanagement.common.user.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -8,10 +8,8 @@ import java.time.Instant;
 import java.util.Date;
 
 @Data
-@Document(collection = "user")
-public class User {
-    @Id
-    private String _id;
+public class UserDetails {
+
     private String tenantId;
     private String firstName;
     private String lastName;

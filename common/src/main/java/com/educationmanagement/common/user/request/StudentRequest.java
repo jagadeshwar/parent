@@ -2,18 +2,16 @@ package com.educationmanagement.common.user.request;
 
 import com.educationmanagement.common.user.model.Address;
 import com.educationmanagement.common.user.model.EnrolledClass;
+import com.educationmanagement.common.user.model.UserDetails;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
 public class StudentRequest {
-    private String tenantId;
+
     private String studentId;
-    private String studentFirstName;
-    private String studentLastName;
-    private String studentEmail;
-    private String phoneNumber;
+    private UserDetails userDetails;
     private EnrolledClass currentClass;
     private List<EnrolledClass> previousClasses;
     private Address permanentAddress;
