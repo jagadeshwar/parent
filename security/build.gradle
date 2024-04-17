@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+bootJar.mainClass = 'NONE'
+group 'com.educationmanagement.security'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":common")
+    implementation 'com.auth0:java-jwt:4.4.0'
+    implementation 'com.auth0:jwks-rsa:0.22.0'
+}
+
+test {
+    useJUnitPlatform()
+}
