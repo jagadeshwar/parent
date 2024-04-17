@@ -1,5 +1,6 @@
 package com.educationmanagement.common.admin.request;
 
+import com.educationmanagement.common.admin.model.ClassTeacher;
 import lombok.Data;
 
 import java.time.Instant;

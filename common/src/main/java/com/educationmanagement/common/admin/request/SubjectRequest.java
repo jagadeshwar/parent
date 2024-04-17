@@ -2,8 +2,6 @@ package com.educationmanagement.common.admin.request;
 
 import lombok.Data;
 
-import java.time.Instant;
-
 @Data
 public class SubjectRequest {
 
