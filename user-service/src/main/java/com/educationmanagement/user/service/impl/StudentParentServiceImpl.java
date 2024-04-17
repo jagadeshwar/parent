@@ -1,4 +1,4 @@
-package com.educationmanagement.user.service;
+package com.educationmanagement.user.service.impl;
 
 import com.educationmanagement.common.user.request.StudentParentRequest;
 import com.educationmanagement.data.user.entity.Parent;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class StudentParentService {
+public class StudentParentServiceImpl {
 
     public void createStudentParent(StudentParentRequest studentParentRequest) {
         //convert  StudentParentRequest to Student and Parent objects and save Student and Parent objects
