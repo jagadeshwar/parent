@@ -1,5 +1,6 @@
 package com.educationmanagement.user.controller;
 
+import com.educationmanagement.common.admin.response.UserCreationResponse;
 import com.educationmanagement.common.user.request.TeacherRequest;
 import com.educationmanagement.common.user.response.TeacherResponse;
 import lombok.extern.slf4j.Slf4j;
@@ -13,10 +14,13 @@ import java.util.List;
 @Slf4j
 public class TeacherController {
 
+
+
     @PostMapping("/addTeacher")
-    public ResponseEntity<TeacherResponse> createTeacher(@RequestBody TeacherRequest teacherRequest) {
-        // Implement the logic to create a teacher
-        return ResponseEntity.ok(new TeacherResponse());
+    public ResponseEntity<UserCreationResponse> createTeacher(@RequestBody TeacherRequest teacherRequest) {
+
+
+        return ResponseEntity.created(null).body(new UserCreationResponse());
     }
 
     @GetMapping("/{id}")

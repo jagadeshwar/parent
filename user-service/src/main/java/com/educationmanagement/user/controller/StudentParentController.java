@@ -1,5 +1,6 @@
 package com.educationmanagement.user.controller;
 
+import com.educationmanagement.common.admin.response.UserCreationResponse;
 import com.educationmanagement.common.user.request.StudentParentRequest;
 import com.educationmanagement.common.user.response.StudentParentResponse;
 import lombok.extern.slf4j.Slf4j;
@@ -14,10 +15,10 @@ import reactor.core.publisher.Mono;
 public class StudentParentController {
 
     @PostMapping("/student-parent")
-    public Mono<ResponseEntity<StudentParentResponse>> createStudentParent(@RequestBody StudentParentRequest studentParentRequest) {
+    public Mono<ResponseEntity<UserCreationResponse>> createStudentParent(@RequestBody StudentParentRequest studentParentRequest) {
 
 
-        return Mono.just(ResponseEntity.ok(new StudentParentResponse()));
+        return Mono.just(ResponseEntity.ok(new UserCreationResponse()));
     }
 
 
